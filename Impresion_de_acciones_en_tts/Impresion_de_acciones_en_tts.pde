@@ -61,13 +61,13 @@ void serialEvent (Serial myPort) {
         if(giroYaw > 0){
           if(abs(giroYaw) > 15){
             //Giro a la izquierda
-            tts.speak("Head turns left");
+            tts.speak("Body turns left");
             centradoYaw = 0;
           }
         }else if(giroYaw < 0){
           if(abs(giroYaw) > 15){
             //Giro a la derecha
-            tts.speak("Head turns right");
+            tts.speak("Body turns right");
             centradoYaw = 0;
           }
         }
@@ -84,13 +84,13 @@ void serialEvent (Serial myPort) {
         if(giroPitch > 0){
           if(abs(giroPitch) > 15){
             //Giro hacia arriba
-            tts.speak("Se giró la cabeza hacia arriba");
+            tts.speak("Body turns up");
             centradoPitch = 0;
           }
         }else if(giroPitch < 0){
           if(abs(giroPitch) > 15){
             //Giro hacia abajo
-            tts.speak("Se giró la cabeza hacia abajo");
+            tts.speak("Body turns down");
             centradoPitch = 0;
           }
         }
@@ -107,13 +107,13 @@ void serialEvent (Serial myPort) {
         if(giroRoll > 0){
           if(abs(giroRoll) > 15){
             //Inclinación a la derecha
-            tts.speak("Se inclinó la cabeza a la derecha");
+            tts.speak("Body tilts right");
             centradoRoll = 0;
           }
         }else if(giroRoll < 0){
           if(abs(giroRoll) > 15){
             //Inclinación a la izquierda
-            tts.speak("Se inclinó la cabeza a la izquierda");
+            tts.speak("Body tilts left");
             centradoRoll = 0;
           }
         }
